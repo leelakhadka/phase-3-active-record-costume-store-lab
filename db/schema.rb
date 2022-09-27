@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 2022_09_27_020805) do
     t.float "price"
     t.string "size"
     t.string "image_url"
-    t.datetime "created"
-    t.datetime "updated"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "haunted_houses", force: :cascade do |t|
